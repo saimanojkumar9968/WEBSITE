@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECE Learning Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+    body {
+      font-family: 'Rubik', sans-serif;
+      background: #f0f3f8;
+    }
+    .card { border-radius: 0.75rem; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 12px 20px rgba(0,0,0,0.1); }
+    .edu-card img { height: 220px; object-fit: cover; width: 100%; }
+    iframe { width: 100%; height: 260px; border: none; margin-top: 12px; }
+    .section-title { font-weight: 500; margin-bottom: 1.5rem; position: relative; }
+    .section-title::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 4px;
+      background: #007bff;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #343a40;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">ECE Learning Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#subjects">Subjects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero d-flex align-items-center text-white" style="min-height: 75vh; background: url('https://images.unsplash.com/photo-1593642634367-d91a135587b5?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; position: relative;">
+  <div class="container position-relative z-2 text-center">
+    <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill">100% Free ECE Learning</span>
+    <h1 class="display-4 fw-bold">Master Electronics & Communication Engineering</h1>
+    <p class="lead mt-3">Learn VLSI, Embedded Systems, and Signal Processing with curated video content and projects.</p>
+    <a href="#subjects" class="btn btn-primary btn-lg mt-4 shadow">Start Learning Now</a>
+  </div>
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5); z-index: 1;"></div>
+</section>
+
+<!-- Subjects -->
+<div class="container my-5" id="subjects">
+  <h2 class="section-title text-center">Core ECE Subjects</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card edu-card shadow">
+        <img src="VLSI-Technology.jpg" alt="VLSI Design">
+        <div class="card-body">
+          <h5 class="card-title">VLSI Design</h5>
+          <p>Explore chip design, CMOS, and Verilog techniques.</p>
+          <iframe src="https://www.youtube.com/embed/9SnR3M3CIm4?si=ejiAti0N5isPYQxq" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card edu-card shadow">
+        <img src="signal-System-1024x1024.jpg" alt="Signals and Systems">
+        <div class="card-body">
+          <h5 class="card-title">Signals & Systems</h5>
+          <p>Dive into transforms, filtering, and system analysis.</p>
+          <iframe src="https://www.youtube.com/embed/0nZYen9w_eo?si=TJ0qEBjZGtZ3pAFc" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card edu-card shadow">
+        <img src="technology-in-style-computer-circuit-board-with-dynamic-light-illustration-ai-generated-photo.jpg" alt="Embedded Systems">
+        <div class="card-body">
+          <h5 class="card-title">Embedded Systems</h5>
+          <p>Hands-on microcontroller programming and RTOS guides.</p>
+          <iframe src="https://www.youtube.com/embed/0xgvINDxXJI?si=OQNLXJL0hbIacHNK" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<section class="py-5 bg-light" id="about">
+  <div class="container">
+    <h2 class="section-title text-center">About This Platform</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <p>
+          Welcome to <strong>ECE Learning Hub</strong> — your digital companion for mastering Electronics and Communication Engineering.
+          Whether you're a student preparing for university exams, a hobbyist building embedded projects, or a professional revisiting core concepts, this platform is designed for you.
+          <br><br>
+          Our mission is to simplify complex ECE topics like VLSI Design, Signal Processing, and Embedded Systems using clear explanations,
+          curated YouTube playlists, real-world visuals, and intuitive resources. Learn at your own pace with expert-led video content, practical examples, and handpicked tutorials.
+          <br><br>
+          We believe that quality education should be accessible, engaging, and career-focused.
+          At ECE Learning Hub, we’re building more than just a blog — we’re nurturing a learning community driven by curiosity, creativity, and a love for technology.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="py-5 bg-light" id="contact">
+  <div class="container">
+    <h2 class="section-title text-center">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3"><label>Your Name</label><input type="text" class="form-control" placeholder="Enter your name"></div>
+          <div class="mb-3"><label>Your Email</label><input type="email" class="form-control" placeholder="Enter your email"></div>
+          <div class="mb-3"><label>Your Message</label><textarea class="form-control" rows="4" placeholder="Type your message here..."></textarea></div>
+          <button type="submit" class="btn btn-primary px-4">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer><p>&copy; 2025 ECE Learning Hub. All rights reserved.</p></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
